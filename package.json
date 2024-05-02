@@ -1,0 +1,32 @@
+{
+  "name": "brite",
+  "module": "index.ts",
+  "type": "module",
+  "author": {
+    "name": "Besmillah Ibrahimi",
+    "email": "besmillah@ibrahimi.info",
+    "url": "https://ibrahimi.info"
+  },
+  "maintainers": [
+    {
+      "name": "Besmillah Ibrahimi",
+      "email": "besmillah@ibrahimi.info",
+      "url": "https://ibrahimi.info"
+    }
+  ],
+  "scripts": {
+    "test": "bun test",
+    "release": "npm run build && npm run test && npm publish --access public"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.1",
+    "@types/cookie": "^0.6.0",
+    "bun-types": "^1.1.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "cookie": "^0.6.0"
+  }
+}
